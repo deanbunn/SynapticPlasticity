@@ -107,6 +107,9 @@ public class FRCTeam
 
     public void ShowShop()
     {
+        //Display the Team Name and Number
+        DisplayTeamNameAndNumber();
+
         //
         //
         //  Put More Stuff Here

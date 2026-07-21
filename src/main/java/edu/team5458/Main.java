@@ -11,11 +11,11 @@ public class Main
             //Load and Run FRC Team
             FRCTeam frcTeam = new FRCTeam(args[0],args[1]);
             
-            // //Run Load Shop Function
-            // frcTeam.ShowShop();
+            //Run Load Shop Function
+            frcTeam.ShowShop();
 
             //Run Display Team Function
-            frcTeam.DisplayTeam();
+            //frcTeam.DisplayTeam();
             
         }
         
