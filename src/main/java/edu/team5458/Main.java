@@ -8,20 +8,15 @@ public class Main
         //Submitted Argument Check
         if(args.length >= 2 && args[0].isEmpty() == false && args[1].isEmpty() == false)
         {
-
             //Load and Run FRC Team
-            FRCTeam frcTeam = new FRCTeam();
+            FRCTeam frcTeam = new FRCTeam(args[0],args[1]);
             
-            //Set Team Name and Number
-            frcTeam.Team_Name = args[0];
-            frcTeam.Team_Number = Integer.parseInt(args[1]);
+            // //Run Load Shop Function
+            // frcTeam.ShowShop();
 
-            //Display Team Name and Number
-            frcTeam.DisplayTeamNameAndNumber();
-
-            //Run Load Shop Function
-            frcTeam.LoadShop();
-
+            //Run Display Team Function
+            frcTeam.DisplayTeam();
+            
         }
         
 
