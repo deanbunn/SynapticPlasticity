@@ -67,7 +67,7 @@ public class FRCTeam
 
         //Initialize Students
         FRCTeamStudent studentGiovan = new FRCTeamStudent("Giovan", 3, TeamPrimaryGroup.programming,YearInSchool.fourth_year);
-        FRCTeamStudent studentPoppy = new FRCTeamStudent("Poppy", 3, TeamPrimaryGroup.programming, YearInSchool.fourth_year);
+        FRCTeamStudent studentPoppy = new FRCTeamStudent("Poppy", 3, TeamPrimaryGroup.business, YearInSchool.fourth_year);
         FRCTeamStudent studentDaniel = new FRCTeamStudent("Daniel", 2, TeamPrimaryGroup.programming, YearInSchool.third_year);
         FRCTeamStudent studentYosan = new FRCTeamStudent("Yosan", 3, TeamPrimaryGroup.mechanical, YearInSchool.fourth_year);
         FRCTeamStudent studentOlana = new FRCTeamStudent("Olana",3,TeamPrimaryGroup.mechanical,YearInSchool.fourth_year);
@@ -93,7 +93,7 @@ public class FRCTeam
         FRCTeamMentor mentorWatts = new FRCTeamMentor("Watts", 9, TeamPrimaryGroup.mechanical, true);
         FRCTeamMentor mentorMark = new FRCTeamMentor("Mark", 11, TeamPrimaryGroup.business, true);
         FRCTeamMentor mentorKate = new FRCTeamMentor("Kate", 11,TeamPrimaryGroup.business, true);
-        FRCTeamMentor mentorMike = new FRCTeamMentor("Mike", 4,TeamPrimaryGroup.programming, true);
+        FRCTeamMentor mentorMike = new FRCTeamMentor("Mike", 14,TeamPrimaryGroup.programming, true);
         FRCTeamMentor mentorDean = new FRCTeamMentor("Dean", 4, TeamPrimaryGroup.programming, true);
 
         lMentors.add(mentorWatts);
