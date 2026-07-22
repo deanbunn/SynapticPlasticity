@@ -11,9 +11,9 @@ A training repository showcasing object-oriented programming concepts, practices
 - `src/main/java/edu/team5458/FRCTeamMember.java` — Abstract parent class for team students and mentors.
 - `src/main/java/edu/team5458/FRCTeamMentor.java` — Child class for team mentors.
 - `src/main/java/edu/team5458/FRCTeamStudent.java` — Child class for students.
-- `src/main/java/com/giroux/energy/GE500.java` — Vendor custom class for import example.
-- `src/main/java/com/horel/solutions/HS900.java` — Vendor custom class for import and class access examples.
-- `src/main/java/com/horel/solutions/HS1200.java` — Vendor custom class with builder example.
+- `src/main/java/com/giroux/energy/GE500.java` — Custom class for import example.
+- `src/main/java/com/horel/solutions/HS900.java` — Custom class for import and class access examples.
+- `src/main/java/com/horel/solutions/HS1200.java` — Custom class with builder example.
 
 
 ### Resources:
