@@ -12,8 +12,8 @@ public class FRCTeam
 {
 
     //Properties for Class
-    public int Team_Number = 0;
-    public String Team_Name = "";
+    public int teamNumber = 0;
+    public String teamName = "";
 
     public FRCTeam()
     {
@@ -23,15 +23,15 @@ public class FRCTeam
     public FRCTeam(String teamName, String teamNumber)
     {
         //Set Team Name and Number When Initializing FRC Team Object
-        this.Team_Name = teamName;
-        this.Team_Number = Integer.parseInt(teamNumber);
+        this.teamName = teamName;
+        this.teamNumber = Integer.parseInt(teamNumber);
     }
 
     public void DisplayTeamNameAndNumber()
     {
         //Print Out Team Name and Number
-        System.out.println("\nTeam Name: " + this.Team_Name);
-        System.out.println("Team Number: " + this.Team_Number + "\n");
+        System.out.println("\nTeam Name: " + this.teamName);
+        System.out.println("Team Number: " + this.teamNumber + "\n");
 
     }
 
@@ -45,7 +45,7 @@ public class FRCTeam
         {
             System.out.println("Student: " + frcstudent.getName());
             System.out.println("Primary Group: " + frcstudent.getPrimaryGroup());
-            frcstudent.CheerForTeam("Whoot whoot. Let's Go 5458!");
+            frcstudent.cheerForTeam("Whoot whoot. Let's Go 5458!");
             System.out.println("\n");
         }
 
@@ -54,7 +54,7 @@ public class FRCTeam
         {
             System.out.println("Mentor: " + frcmentor.getName());
             System.out.println("Primary Group: " + frcmentor.getPrimaryGroup());
-            frcmentor.CheerForTeam("Whoot whoot. Let's Go 5458!");
+            frcmentor.cheerForTeam("Whoot whoot. Let's Go 5458!");
             System.out.println("\n");
         }
         
@@ -110,12 +110,6 @@ public class FRCTeam
         //Display the Team Name and Number
         DisplayTeamNameAndNumber();
 
-        //
-        //
-        //  Put More Stuff Here
-        //
-        //
-
         //Print Out All the HS900 Device Names
         for(HS900 hs900 : LoadHS900s())
         {
@@ -126,21 +120,21 @@ public class FRCTeam
         System.out.println(" ");
 
         //Initialize Object Using Builder (If Class has one)
-        HS1200 phsShop_HS1200 = HS1200.builder()
-            .product_id("BM67CVFD32")
-            .device_name("PHS Super Cutter")
-            .firmware_version(23)
-            .support_tier(3)
+        HS1200 phsShopHS1200 = HS1200.builder()
+            .productID("BM67CVFD32")
+            .deviceName("PHS Super Cutter")
+            .firmwareVersion(23)
+            .supportTier(3)
             .build();
         
         //Print Support Information
-        System.out.println(phsShop_HS1200.getSupportInfo());
+        System.out.println(phsShopHS1200.getSupportInfo());
     
         //Change Support Tier
-        phsShop_HS1200.setSupportTier(6);
+        phsShopHS1200.setSupportTier(6);
 
         //Print HS1200 Information
-        System.out.println(phsShop_HS1200.getSupportInfo());
+        System.out.println(phsShopHS1200.getSupportInfo());
         
         
     }

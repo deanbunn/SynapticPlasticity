@@ -2,16 +2,26 @@ package edu.team5458;
 
 public class FRCTeamMentor extends FRCTeamMember 
 {
-    public boolean Training_Completed;
+    private boolean trainingCompleted;
 
-    public FRCTeamMentor(String name,int years_in_first,TeamPrimaryGroup primary_group,Boolean traing_completed)
+    public FRCTeamMentor(String name,int yearsInFirst,TeamPrimaryGroup primaryGroup,Boolean traingCompleted)
     {
-        super(name,years_in_first,primary_group);
-        this.Training_Completed = traing_completed;
+        super(name,yearsInFirst,primaryGroup);
+        this.trainingCompleted = traingCompleted;
+    }
+
+    public boolean isTrainingCompleted()
+    {
+        return trainingCompleted;
+    }
+
+    public void setTrainingCompleted(boolean traingCompleted)
+    {
+        this.trainingCompleted = traingCompleted;
     }
 
     @Override
-    public void CheerForTeam(String cheer)
+    public void cheerForTeam(String cheer)
     {
         System.out.println(cheer + " Mentors are awesome!");
     }

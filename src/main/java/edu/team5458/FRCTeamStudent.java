@@ -2,13 +2,13 @@ package edu.team5458;
 
 public class FRCTeamStudent extends FRCTeamMember
 {
-    public YearInSchool Year_In_School;
 
+    public YearInSchool yearInSchool;
 
-    public FRCTeamStudent(String name,int years_in_first,TeamPrimaryGroup primary_group,YearInSchool year_in_school)
+    public FRCTeamStudent(String name,int yearsInFirst,TeamPrimaryGroup primaryGroup,YearInSchool yearInSchool)
     {
-        super(name,years_in_first,primary_group);
-        this.Year_In_School = year_in_school;
+        super(name,yearsInFirst,primaryGroup);
+        this.yearInSchool = yearInSchool;
     }
 
     public enum YearInSchool
@@ -20,8 +20,18 @@ public class FRCTeamStudent extends FRCTeamMember
         fourth_year
     }
 
+    public YearInSchool getYearInSchool()
+    {
+        return yearInSchool;
+    }
+
+    public void setYearInSchool(YearInSchool yearInSchool)
+    {
+        this.yearInSchool = yearInSchool;
+    }
+
     @Override
-    public void CheerForTeam(String cheer)
+    public void cheerForTeam(String cheer)
     {
         System.out.println(cheer + " Go Burgandy!");
     }

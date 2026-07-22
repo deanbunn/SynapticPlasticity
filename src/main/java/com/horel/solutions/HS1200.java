@@ -3,10 +3,10 @@ package com.horel.solutions;
 
 public class HS1200 
 {
-    private String product_id;
-    private String device_name;
-    private int firmware_version;
-    private int support_tier;
+    private String productID;
+    private String deviceName;
+    private int firmwareVersion;
+    private int supportTier;
 
     private HS1200()
     {
@@ -20,85 +20,74 @@ public class HS1200
 
     public String getProductID()
     {
-        return product_id;
+        return productID;
     }
 
     public String getDeviceName()
     {
-        return device_name;
+        return deviceName;
     }
 
     public String getSupportInfo()
     {
-        String supportInfo = "HS1200 Device Name: " + device_name + "\nHS1200 Support Tier: " + support_tier + "\n";
+        String supportInfo = "HS1200 Device Name: " + deviceName + "\nHS1200 Support Tier: " + supportTier + "\n";
 
         return supportInfo;
     }
 
     public int getFirmwareVersion()
     {
-        return firmware_version;
+        return firmwareVersion;
     }
 
     public int getSupportTier()
     {
-        return support_tier;
+        return supportTier;
     }
 
-    public void setSupportTier(int support_tier)
+    public void setSupportTier(int supportTier)
     {
-        this.support_tier = support_tier;
+        this.supportTier = supportTier;
     }
 
     public static class Builder
     {
-        private String product_id;
-        private String device_name;
-        private int firmware_version;
-        private int support_tier;
+        private String productID;
+        private String deviceName;
+        private int firmwareVersion;
+        private int supportTier;
 
-        public Builder product_id(String product_id)
+        public Builder productID(String productID)
         {
-            this.product_id = product_id;
+            this.productID = productID;
             return this;
         }
 
-        public Builder device_name(String device_name)
+        public Builder deviceName(String deviceName)
         {
-            this.device_name = device_name;
+            this.deviceName = deviceName;
             return this;
         }
 
-        public Builder firmware_version(int firmware_version)
+        public Builder firmwareVersion(int firmwareVersion)
         {
-            this.firmware_version = firmware_version;
+            this.firmwareVersion = firmwareVersion;
             return this;
         }
 
-        public Builder support_tier(int support_tier)
+        public Builder supportTier(int supportTier)
         {
-            this.support_tier = support_tier;
+            this.supportTier = supportTier;
             return this;
         }
 
         public HS1200 build()
         {
             HS1200 hs1200 = new HS1200();
-            hs1200.product_id = product_id;
-            hs1200.device_name = device_name;
-            hs1200.firmware_version = firmware_version;
-            hs1200.support_tier = support_tier;
-
-            if(product_id == null)
-            {
-                throw new IllegalStateException("Product ID is required");
-            }
-
-            if(device_name == null)
-            {
-                throw new IllegalStateException("Device Name is required");
-            }
-
+            hs1200.productID = productID;
+            hs1200.deviceName = deviceName;
+            hs1200.firmwareVersion = firmwareVersion;
+            hs1200.supportTier = supportTier;
             return hs1200;
         }
     }

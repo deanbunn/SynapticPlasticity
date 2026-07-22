@@ -2,15 +2,15 @@ package edu.team5458;
 
 public abstract class FRCTeamMember 
 {
-    private String Name = "";
-    private TeamPrimaryGroup Primary_Group;
-    private int Years_in_FIRST = 0;
+    private String name = "";
+    private TeamPrimaryGroup primaryGroup;
+    private int yearsInFirst = 0;
 
-    public FRCTeamMember(String name,int years_in_first,TeamPrimaryGroup primary_group)
+    public FRCTeamMember(String name,int yearsInFirst,TeamPrimaryGroup primaryGroup)
     {
-        this.Name = name;
-        this.Years_in_FIRST = years_in_first;
-        this.Primary_Group = primary_group;
+        this.name = name;
+        this.yearsInFirst = yearsInFirst;
+        this.primaryGroup = primaryGroup;
     }
 
     public enum TeamPrimaryGroup
@@ -21,7 +21,7 @@ public abstract class FRCTeamMember
     }
 
     //Common Methods
-    public void CheerForTeam(String cheer)
+    public void cheerForTeam(String cheer)
     {
         System.out.println(cheer);
     }
@@ -29,33 +29,33 @@ public abstract class FRCTeamMember
     //Getters
     public String getName()
     {
-        return Name;
+        return name;
     }
 
     public TeamPrimaryGroup getPrimaryGroup()
     {
-        return Primary_Group;
+        return primaryGroup;
     }
     
     public int getYearsInFIRST()
     {
-        return Years_in_FIRST;
+        return yearsInFirst;
     }
 
     //Setters
     public void setName(String name)
     {
-        this.Name = name;
+        this.name = name;
     }
 
-    public void setPrimaryGroup(TeamPrimaryGroup primary_group)
+    public void setPrimaryGroup(TeamPrimaryGroup primaryGroup)
     {
-        this.Primary_Group = primary_group;
+        this.primaryGroup = primaryGroup;
     }
 
-    public void setYearsInFIRST(int years_in_first)
+    public void setYearsInFIRST(int yearsInFirst)
     {
-        this.Years_in_FIRST = years_in_first;
+        this.yearsInFirst = yearsInFirst;
     }
 
 }
