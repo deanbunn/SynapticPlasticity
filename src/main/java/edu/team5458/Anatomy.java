@@ -1,7 +1,7 @@
 /*
-    Anatomy.java is reference file for learning Java code structure
+    Documentation Section (Optional)
 
-    The Documentation Section (Optional)
+    Anatomy.java is reference file for learning Java code structure
 
     Example:
     Author: Dean Bunn
