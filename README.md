@@ -15,6 +15,31 @@ A training repository showcasing object-oriented programming concepts, practices
 - `src/main/java/com/horel/solutions/HS900.java` — Custom class for import and class access examples.
 - `src/main/java/com/horel/solutions/HS1200.java` — Custom class with builder example.
 
+### Common Java Naming Scheme:
+
+| Element | Convention | Example |
+|:--------|:-----------|:--------|
+| Package | lowercase  | com.horel.solutions |
+| Class   | PascalCase | FRCTeamStudent |
+| Interface | PascalCase | Runnable |
+| Enum     | PascalCase | YearInSchool |
+| Enum constant | UPPER_SNAKE_CASE | FIRST_YEAR |
+| Instance Property | camelCase | deviceName |
+| Local variable | camelCase | currentSpeed |
+| Object instance | camelCase | driveSubsystem | 
+| Method | camelCase | calculateSpeed() |
+| Constant (static final) | UPPER_SNAKE_CASE | MAX_SPEED |
+
+
+#### Naming Example: 
+
+```java
+private final XboxController driverController = new XboxController(0);
+private final DriveSubsystem driveSubsystem = new DriveSubsystem();
+private final CommandXboxController operatorController = new CommandXboxController(1);
+```
+The classes (`XboxController`,`DriveSubsystem`) are in **PascalCase**, while the object instances (`driverController`,`driveSubsystem`) are in **camelCase**.
+
 
 ### Resources:
 
