@@ -119,7 +119,7 @@ public class FRCTeam
         //Print Out All the HS900 Device Names
         for(HS900 hs900 : LoadHS900s())
         {
-            System.out.println("HS900: " + hs900.Device_Name);
+            System.out.println("HS900: " + hs900.getDeviceName());
         }
 
         //Print Blank Line for Readability
@@ -150,9 +150,10 @@ public class FRCTeam
 
         //Initialize Giroux Device Instance
         GE500 phsShop_GE500 = new GE500();
-        phsShop_GE500.Serial_Number = "XG21ZKBN97S";
-        phsShop_GE500.Firmware_Version = 2.57;
+        phsShop_GE500.setSerialNumber("XG21ZKBN97S");
+        phsShop_GE500.setFirmwareVersion(2.57);
 
+        //Return Giroux Device Instance
         return phsShop_GE500;
 
     }
@@ -165,14 +166,14 @@ public class FRCTeam
 
         //Initialize Horel Device Instances
         HS900 phsShop_HS900 = new HS900();
-        phsShop_HS900.Product_ID = "BR23991X8890";
-        phsShop_HS900.Device_Name = "PHS Cutter";
-        phsShop_HS900.Firmware_Version = 2;
+        phsShop_HS900.setProductId("BR23991X8890");
+        phsShop_HS900.setDeviceName("PHS Cutter");
+        phsShop_HS900.setFirmwareVersion(2);
 
         HS900 dmsShop_HS900 = new HS900();
-        dmsShop_HS900.Product_ID = "NMX2545LBQ59";
-        dmsShop_HS900.Device_Name = "DMS Cutter";
-        dmsShop_HS900.Firmware_Version = 1;
+        dmsShop_HS900.setProductId("NMX2545LBQ59");
+        dmsShop_HS900.setDeviceName("DMS Cutter");
+        dmsShop_HS900.setFirmwareVersion(1);
 
         //Add Device to Returned List
         lHS900s.add(phsShop_HS900);

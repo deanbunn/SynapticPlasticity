@@ -2,11 +2,33 @@ package com.giroux.energy;
 
 public class GE500 
 {
-    public String Serial_Number = "";
-    public Double Firmware_Version = 1.0;
-    
+    private String serialNumber;
+    private double firmwareVersion;
+
     public GE500()
     {
-        
+        serialNumber = "";
+        firmwareVersion = 1.0;
     }
+
+    public String getSerialNumber()
+    {
+        return serialNumber;
+    }
+
+    public void setSerialNumber(String serialNumber)
+    {
+        this.serialNumber = serialNumber;
+    }
+
+    public double getFirmwareVersion()
+    {
+        return firmwareVersion;
+    }
+
+    public void setFirmwareVersion(double firmwareVersion)
+    {
+        this.firmwareVersion = firmwareVersion;
+    }
+    
 }
