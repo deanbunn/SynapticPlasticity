@@ -5,7 +5,7 @@
 
     Example:
     Author: Dean Bunn
-    Last Edited: 2026-07-21
+    Last Edited: 2026-07-22
 */
 
 //#########################################
@@ -30,28 +30,35 @@ public class Anatomy
     //#######################################
     public String status = "";
     public int count = 0;
-    public double tuner_setting = 0.0;
+    public double tunerSetting = 0.0;
 
     //#################################
-    //Constructors
+    //Constructors (with Overloading)
     //#################################
     public Anatomy()
     {
 
     }
   
-    public Anatomy(String s_status,int s_count)
+    public Anatomy(String status,int count)
     {
-        this.status = s_status;
-        this.count = s_count;
+        this.status = status;
+        this.count = count;
+    }
+
+    public Anatomy(String status, int count, double tunerSetting)
+    {
+        this.status = status;
+        this.count = count;
+        this.tunerSetting = tunerSetting;
     }
 
     //################################
     // Functions and Methods
     //###############################
-    public void AddToCount(int n_value)
+    public void addToCount(int nValue)
     {
-        this.count += n_value;
+        this.count += nValue;
     }
 
     //##############################
