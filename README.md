@@ -2,7 +2,6 @@
 
 A training repository showcasing object-oriented programming concepts, practices, and features in Java. 
 
-
 ### File Overview:
 
 - `src/main/java/edu/team5458/Main.java` — Entry point of the application.
@@ -31,19 +30,23 @@ A training repository showcasing object-oriented programming concepts, practices
 | Constant (static final) | UPPER_SNAKE_CASE | MAX_SPEED |
 
 
-#### Naming Example: 
+### Naming Example: 
+
+The classes (`XboxController`,`DriveSubsystem`) are in **PascalCase**, while the object instances (`driverController`,`driveSubsystem`) are in **camelCase**.
 
 ```java
 private final XboxController driverController = new XboxController(0);
 private final DriveSubsystem driveSubsystem = new DriveSubsystem();
 private final CommandXboxController operatorController = new CommandXboxController(1);
 ```
-The classes (`XboxController`,`DriveSubsystem`) are in **PascalCase**, while the object instances (`driverController`,`driveSubsystem`) are in **camelCase**.
 
-
-### Resources:
+### Resource Links:
 
 - [W3 Schools: Java OOP](https://www.w3schools.com/java/java_oop.asp)
 - [Geeks for Geeks: Java OOP(Object Oriented Programming) Concepts](https://www.geeksforgeeks.org/java/object-oriented-programming-oops-concept-in-java/)
 - [Oracle: Object-Oriented Programming Concepts](https://docs.oracle.com/javase/tutorial/java/concepts/)
 - [freeCodeCamp: OOP Meaning – What is Object-Oriented Programming?](https://www.freecodecamp.org/news/what-is-object-oriented-programming/)
+- [WPILib: What is WPILib?](https://docs.wpilib.org/en/stable/docs/software/what-is-wpilib.html)
+- [WPILib: Creating a Robot Program](https://docs.wpilib.org/en/stable/docs/software/vscode-overview/creating-robot-program.html)
+- [WPILib: What Is “Command-Based” Programming?](https://docs.wpilib.org/en/stable/docs/software/commandbased/what-is-command-based.html)
+- [WPILib: Organizing Command-Based Robot Projects](https://docs.wpilib.org/en/stable/docs/software/commandbased/organizing-command-based.html)
