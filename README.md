@@ -1,6 +1,6 @@
 ## Synaptic Plasticity
 
-A training repository showcasing object-oriented programming concepts, practices, and features in Java. 
+A Java training repository for FRC Team 5458 (Digital Minds) developers, covering the fundamentals of object-oriented programming.
 
 ### File Overview:
 
