@@ -42,6 +42,7 @@ private final CommandXboxController operatorController = new CommandXboxControll
 
 ### Resource Links:
 
+- [W3 Schools: Java Tutorial](https://www.w3schools.com/java/)
 - [W3 Schools: Java OOP](https://www.w3schools.com/java/java_oop.asp)
 - [Geeks for Geeks: Java OOP(Object Oriented Programming) Concepts](https://www.geeksforgeeks.org/java/object-oriented-programming-oops-concept-in-java/)
 - [Oracle: Object-Oriented Programming Concepts](https://docs.oracle.com/javase/tutorial/java/concepts/)

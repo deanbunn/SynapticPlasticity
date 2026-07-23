@@ -37,9 +37,7 @@ public class FRCTeam
 
     public void DisplayTeam()
     {
-        //Display the Team Name and Number
-        DisplayTeamNameAndNumber();
-
+        
         //Display Students
         for(FRCTeamStudent frcstudent : LoadStudents())
         {
@@ -107,6 +105,7 @@ public class FRCTeam
 
     public void ShowShop()
     {
+        
         //Display the Team Name and Number
         DisplayTeamNameAndNumber();
 
