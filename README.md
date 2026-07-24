@@ -13,6 +13,7 @@ A Java training repository for FRC Team 5458 (Digital Minds) developers, coverin
 - `src/main/java/com/giroux/energy/GE500.java` — Custom class for import example.
 - `src/main/java/com/horel/solutions/HS900.java` — Custom class for import and class access examples.
 - `src/main/java/com/horel/solutions/HS1200.java` — Custom class with builder example.
+- `src/main/java/edu/wjusd/Lesson*.java` — Java basics lesson class files
 
 ### Common Java Naming Scheme:
 
@@ -54,7 +55,7 @@ private final CommandXboxController operatorController = new CommandXboxControll
 - [Team 5458 Git Usage](https://github.com/FRCTeam5458DigitalMinds/Team5458GitUsage)
 
 
-### Anatomy of Java Code Structure
+### Anatomy of Java Code Structure:
 
 ```java
 /*

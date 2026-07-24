@@ -7,7 +7,7 @@ package edu.wjusd;
 
 public class Lesson04 {
 
-    public boolean bStatus;
+    public static boolean bStatus;
 
     public Lesson04()
     {
