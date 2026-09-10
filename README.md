@@ -16,7 +16,7 @@ This repository and its [lesson files](src/main/java/edu/wjusd) are designed for
 - `src/main/java/com/horel/solutions/HS900.java` — Custom class for import and class access examples.
 - `src/main/java/com/horel/solutions/HS1200.java` — Custom class with builder example.
 - `src/main/java/edu/wjusd/Lesson*.java` — Java basics lesson class files.
-- `src/main/java/show/jojo/*.java` — Student developed custom classes based upon their favorite shows.
+- `src/main/java/show/****/*.java` — Student developed custom classes based upon their favorite shows.
 
 ### Common Java Naming Scheme:
 
