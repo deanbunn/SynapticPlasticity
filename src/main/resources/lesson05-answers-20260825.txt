@@ -1,0 +1,113 @@
+/*
+    Lesson 05 - Conditional Statements
+
+*/
+
+package edu.wjusd;
+
+public class Lesson05 
+{
+
+    public static int lessonHours;
+
+    public Lesson05()
+    {
+
+    }
+
+    public static void StartLesson()
+    {
+
+        System.out.println("\nStarting Lesson 05\n");
+
+        //Task 1: Create two int variables and assign them values
+        int num1 = 1;
+        int num2 = 2;
+        //Task 2: Create three double variables and assign them values
+        double pi7 = 3.1415926;
+        double whatever1 = 6.112556;
+        double whatever2 = 19.5262864;
+        //Task 3: Create three string variables and assign them values
+        String string1 = "value1";
+        String string2 = "value55";
+        String string3 = "value23";
+        //Task 4: Write an "if" statement that compares the two int variables and displays messages about each condition
+        if(num1 > num2){
+            System.out.println("num1 is bigger than num2!");
+        }
+        else{
+            System.out.println("num2 is bigger than num1");
+        }
+        //Task 5: Write an "if" statement that compares the double variables and displays messages about each condition
+        if(whatever1 < whatever2){
+            System.out.println("whatever2 is bigger than whatever1");
+        }else{
+            System.out.println("whatever1 is bigger than whatever2");
+        }
+        //Task 6: Write an "if" statement that compares the two int variables to the number 50 and displays a message about the condition
+        if(num1 > 50 || num2 > 50)
+        {
+            System.out.println("num1 or num2 are bigger than 50");
+        }
+        else
+        {
+            System.out.println("num 1 or num2 is smaller than 50");
+        }
+        //Task 7: Write an "if" statement that compares the multipled value of both double variables to 10,000 and displays a message about the result
+        if((whatever1 * whatever2) > 10000)
+        {
+            System.out.println("the whatevers are bigger than 10000");
+        }
+        else
+        {
+            System.out.println("The whatevers are smaller than 10000 :(");
+        }
+        //Task 8: Write an "if" statement that uses an "else if" option
+        if ((num1 + num2) < 67){
+            System.out.println("num1 and num2 combined are less than 67");  
+        }
+        else if((num1 + num2) == 67 ){
+            System.out.println("num1 and num2 combined are equal to 67");
+        }
+        else{
+            System.out.println("num1 and num2 combined are greater than 67");
+        }
+        //Task 9: Write an "if" statement that uses an "else if" and "else" options
+        //Task 10: Create a "switch" statement that checks the value of one of the int variables
+        switch(num1)
+        {
+            case 1:
+                System.out.println("Num1 is at the very very least 1");
+                break;
+            case 2:
+                System.out.println("Num1 is definetly not 1");
+                break;
+            default:
+                System.out.println("Idk what num1 is -_-");
+        }
+        //Task 11: Create a "switch" statement that checks the value of one of the string variables
+        switch(string2)
+        {
+            case "Zenon":
+                System.out.println("String2 equal Zenon");
+                break;
+
+            case "Giovan":
+                System.out.println("String2 equal Giovan");
+                break;
+
+            case "Poppy":
+                System.out.println("String2 equal Poppy");
+                break;
+
+            default:
+                System.out.println("String2 equal something");
+            
+
+            
+        }
+    }
+}
+
+
+
